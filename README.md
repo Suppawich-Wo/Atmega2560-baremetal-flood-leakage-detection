@@ -63,17 +63,17 @@ System Block Diagram
 
 Repository Structure
 .
-├── transmitter_node/       # [บอร์ดที่ 1: ฝั่งตรวจจับน้ำท่วม/ไฟรั่ว & ส่ง Serial]
-│   ├── main.c              # โค้ดหลัก (ADC, PCINT, USART Tx)
+├── transmitter_node/       # [Board no.1: Flood, leakge detect & Serial transmitter]
+│   ├── main.c              # main code (ADC, PCINT, USART Tx)
 │   ├── adc.c
 │   └── usart.c
 │
-├── receiver_node/          # [บอร์ดที่ 2: ฝั่งรับ Serial & แสดงผล/แจ้งเตือน]
-│   ├── main.c              # โค้ดหลัก (USART Rx ISR, Display Driver)
-│   └── lcd.c               # (ถ้ามี เช่น ไดรเวอร์จอ LCD/OLED)
+├── receiver_node/          # [Board no.2: Serial Receiver & notify]
+│   └── main.c              # main code (USART Rx ISR, Display Driver)
+│  
 │
 ├── proteus/
-│   └── flood_system.pdsprj # ไฟล์จำลอง Proteus (ที่มีบอร์ด 2 ตัวต่อสาย Serial ถึงกัน)
+│   └── flood_system.pdsprj # Proteus
 │
 └── README.md
 

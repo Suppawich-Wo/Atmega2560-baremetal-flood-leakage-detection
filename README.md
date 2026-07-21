@@ -63,10 +63,10 @@ System Block Diagram
 
 Repository Structure
 .
-├── transmitter_node/       # [Board no.1: Flood, leakge detect & Serial transmitter]
-│   ├── main1.c              # main code (ADC, PCINT, USART Tx)
-│   ├── adc.c
-│   └── usart.c
+├── transmitter_node/       # [Board no.1: Flood, leakage detect & Serial transmitter]
+│   └── main1.c              # main code (ADC, PCINT, USART Tx)
+│   
+│   
 │
 ├── receiver_node/          # [Board no.2: Serial Receiver & notify]
 │   └── main2.c              # main code (USART Rx ISR, Display Driver)

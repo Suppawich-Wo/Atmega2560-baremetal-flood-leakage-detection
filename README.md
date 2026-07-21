@@ -1,7 +1,7 @@
 # Atmega2560-baremetal-flood-leakage-detection
 Bare-metal AVR-C firmware for ATmega2560 featuring real-time flood level and electrical leakage detection using sensor fusion (Ultrasonic ToF &amp; ACS712) and hardware interrupts.
 
-# ⚡ Bare-Metal Flood & Electrical Leakage Detection System
+# Bare-Metal Flood & Electrical Leakage Detection System
 
 [![Microchip](https://img.shields.io/badge/MCU-ATmega2560-orange.svg)](https://www.microchip.com/)
 [![Language](https://img.shields.io/badge/Language-Bare--Metal%20AVR--C-blue.svg)]()
@@ -12,7 +12,7 @@ An embedded safety and environmental monitoring system built entirely on bare-me
 
 ---
 
-## 📌 System Highlights & Architecture
+## System Highlights & Architecture
 
 * **Hardware Target:** Microchip ATmega2560 (16 MHz)
 * **Core Philosophy:** Direct Register Manipulation & Threadless ISR Architecture
@@ -24,7 +24,7 @@ An embedded safety and environmental monitoring system built entirely on bare-me
 
 ---
 
-## 🛠️ Low-Level Technical Implementation
+## Low-Level Technical Implementation
 
 ### Direct Register & Interrupt Control
 Rather than relying on polling loops or high-overhead library calls, the firmware executes deterministic control routines using native AVR registers:
@@ -97,7 +97,7 @@ In the Program File field, browse and select the compiled firmware.hex.
 
 Click Play to start the interactive simulation and open the Virtual Terminal to observe USART3 telemetry.
 
-👤 Author
+Author
 Suppawich Woraphonpaiboon
 
 Electrical Engineering Graduate (Second Class Honours) | Kasetsart University

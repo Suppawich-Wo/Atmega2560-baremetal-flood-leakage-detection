@@ -1,3 +1,13 @@
+/*
+ * ===================================================================
+ * Project: Bare-Metal Flood & Electrical Leakage Detection (Receiver)
+ * Target MCU: ATmega2560 @ 16MHz
+ * 
+ * HARDWARE PIN MAPPING:
+ * - Serial Rx        : RX3 / PJ0 (Connect to Receiver RX3)
+ * - Status LEDs	  : PS0 - PS3
+ * ===================================================================
+ */
 #include <inttypes.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>

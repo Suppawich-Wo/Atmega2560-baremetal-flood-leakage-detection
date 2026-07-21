@@ -63,16 +63,18 @@ System Block Diagram
 
 Repository Structure
 .
-├── src/
-│   ├── main.c              # Core state machine & ISR handlers
-│   ├── usart.c / usart.h   # Bare-metal USART communication driver
-│   └── adc.c / adc.h       # ADC & RMS math calibration functions
+├── transmitter_node/       # [บอร์ดที่ 1: ฝั่งตรวจจับน้ำท่วม/ไฟรั่ว & ส่ง Serial]
+│   ├── main.c              # โค้ดหลัก (ADC, PCINT, USART Tx)
+│   ├── adc.c
+│   └── usart.c
+│
+├── receiver_node/          # [บอร์ดที่ 2: ฝั่งรับ Serial & แสดงผล/แจ้งเตือน]
+│   ├── main.c              # โค้ดหลัก (USART Rx ISR, Display Driver)
+│   └── lcd.c               # (ถ้ามี เช่น ไดรเวอร์จอ LCD/OLED)
+│
 ├── proteus/
-│   ├── schematic.pdsprj    # Proteus Design Suite circuit simulation
-│   └── components/         # Custom schematic libraries
-├── docs/
-│   └── System_Architecture.pdf
-├── .gitignore              # Configured for C/C++ & Proteus temporary files
+│   └── flood_system.pdsprj # ไฟล์จำลอง Proteus (ที่มีบอร์ด 2 ตัวต่อสาย Serial ถึงกัน)
+│
 └── README.md
 
 How to Run & Simulate

@@ -1,3 +1,17 @@
+/*
+ * ===================================================================
+ * Project: Bare-Metal Flood & Electrical Leakage Detection (Transmitter)
+ * Target MCU: ATmega2560 @ 16MHz
+ * 
+ * HARDWARE PIN MAPPING:
+ * - Ultrasonic Trig  : PB0 (Digital Output)
+ * - Ultrasonic Echo  : PB1 / PCINT0 (Interrupt Input)
+ * - ACS712 Sensor    : ADC0 / PF0 (Analog Input)
+ * - Serial Tx        : TX3 / PJ1 (Connect to Receiver RX3)
+ * - Buzzer           : PA0
+ * - Status LEDs	  : PK0 - PK3
+ * ===================================================================
+ */
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #define F_CPU 16000000UL

@@ -53,3 +53,34 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# ==========================================
+# Proteus Design Suite (Labcenter Electronics)
+# ==========================================
+# Proteus Backup & Temporary Files
+*.pdsbak
+*.workspace
+*.pdsprj.*.workspace
+Last Loaded *.pdsprj
+
+# Proteus Simulation & Netlist Cache
+*.SDF
+*.SDF.*
+*.DRC
+*.LOG
+*.DBK
+
+# Compiler Output Files (Keil / AVR-GCC / MPLAB output in Proteus)
+*.hex
+*.elf
+*.cof
+*.lst
+*.obj
+*.sym
+*.map
+*.dep
+*.i
+
+# Microchip / Atmel Studio Temporary Files (If using external IDE)
+.vs/
+*.componentfile
